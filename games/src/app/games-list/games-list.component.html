@@ -1,0 +1,13 @@
+@for (game of games; track game.id) {
+  <mat-card
+    class="mat-card"
+    (click)="navigateToGame(game.id)"
+    style="cursor: pointer;">
+
+    <mat-card-title>{{game.name}}</mat-card-title>
+    <mat-card-content>
+      Click to play the Math Game!
+    </mat-card-content>
+  </mat-card>
+}
+

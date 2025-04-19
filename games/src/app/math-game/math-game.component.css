@@ -1,0 +1,10 @@
+.main-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f0f0f0;
+}
+
+.game-container {
+  margin-left: 1rem;
+  height: calc(100vh - 200px);
+}

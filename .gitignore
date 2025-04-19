@@ -1,0 +1,42 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+games/dist
+games/tmp
+games/out-tsc
+games/bazel-out
+
+# Node
+games/node_modules/*
+games/npm-debug.log
+games/yarn-error.log
+
+# IDEs and editors
+games/.idea/
+games/.project
+games/.classpath
+games/.c9/
+games/*.launch
+games/.settings/
+games/*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+games/.angular/cache
+games/.sass-cache/
+games/connect.lock
+games/coverage
+games/libpeerconnection.log
+games/testem.log
+games/typings
+
+# System files
+games/.DS_Store
+games/Thumbs.db

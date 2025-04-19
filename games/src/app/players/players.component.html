@@ -1,0 +1,16 @@
+<div class="player-container">
+  <button mat-raised-button color="primary" (click)="addPlayer()"><mat-icon>add</mat-icon>Add Player</button>
+
+
+  <mat-form-field class="player-select">
+    <mat-label>Select Player</mat-label>
+    <mat-select>
+    @for(player of players; track player.id) {
+      <div class="player-option">
+        <mat-option>{{ player.name }}</mat-option>
+        <button mat-icon-button (click)="removePlayer(player.id)"><mat-icon>delete</mat-icon></button>
+      </div>
+    }
+  </mat-select>
+  </mat-form-field>
+</div>
