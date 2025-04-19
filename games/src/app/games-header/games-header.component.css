@@ -1,0 +1,22 @@
+.game-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  font-size: 3rem;
+}
+.home-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #e02f32;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+  font-size: 16px;
+  border-radius: 10px;
+}
