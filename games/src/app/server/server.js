@@ -1,3 +1,4 @@
+// This is a simple Express server that connects to a MySQL database and serves data to the client.
 const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
@@ -7,6 +8,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
+// Create a connection to the MySQL database - update with your credentials.
 const db = mysql.createConnection({
   host: 'localhost',
   user: 'joe',
@@ -22,7 +24,11 @@ db.connect((err) => {
   console.log('Connected to database');
 });
 
-// Define API endpoints
+// Define API endpoints below
+
+// START of API endpoints
+
+// Endpoint to get all games
 app.get('/api/games', (req, res) => {
   db.query('SELECT * FROM games', (err, results) => {
     if (err) {
@@ -33,6 +39,7 @@ app.get('/api/games', (req, res) => {
   });
 });
 
+// Endpoint to get all players
 app.get('/api/players', (req, res) => {
   db.query('SELECT * FROM players', (err, results) => {
     if (err) {
@@ -43,6 +50,10 @@ app.get('/api/players', (req, res) => {
   });
 });
 
+
+// END of API endpoints
+
+// Set the port for the server to listen on and start listening for requests
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
