@@ -1,3 +1,8 @@
+/*
+  This defines the styles for the math-game.component.html file. If there is not a lot of custom CSS for the component you could move this to the app.component.css file.
+  This would make these css classes available to all components by updating the Styles property in the components.ts file.
+*/
+
 .main-container {
   display: flex;
   flex-direction: row;
@@ -7,4 +12,14 @@
 .game-container {
   margin-left: 1rem;
   height: calc(100vh - 200px);
+  max-width: 65vw;
+}
+
+.left-container, .right-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 15vw;
+  margin-left: 1rem;
+  margin-top: 1rem;
 }

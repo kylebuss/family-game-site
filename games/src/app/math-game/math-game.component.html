@@ -1,12 +1,31 @@
+<!-- This is the reusable games-header.component -->
 <app-games-header></app-games-header>
 
+<!--
+  The main-container css class is using CSS Flexbox with direction set to row.
+  This provides a left and right side containers for content you want to display.
+ -->
 <div class="main-container">
+  <div class="left-container">
+    <!-- This is the reusable players.component -->
+    <app-players></app-players>
+    <!--
+      Add any other reusable Angular components that you want on the left hand side
+    -->
+  </div>
 
-<app-players></app-players>
+  <div class="game-container">
+    <!--
+      Replace with additional HTML or Angular components for the design of your Math Game
+    -->
+    <h1>Game Container</h1>
+  </div>
 
-<div class="game-container">
+  <div class="right-container">
+    <!--
+      Add any other reusable Angular components that you want on the right hand side.
+    -->
+  </div>
 
-  <h1>Game Container</h1>
-</div>
 </div>
 

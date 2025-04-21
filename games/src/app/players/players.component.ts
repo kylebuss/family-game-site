@@ -30,9 +30,9 @@ export class PlayersComponent implements OnInit {
   }
 
   addPlayer() {
-    // not implemented yet
+    // API not implemented yet
   }
   removePlayer(index: number) {
-    // not implemented yet
+    // API not implemented yet
   }
 }
