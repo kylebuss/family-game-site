@@ -1,8 +1,10 @@
 # family-game-site
 
 ## Install before running in VSCode
-1. [git](https://git-scm.com/) (version 2.49.0)
-2. [Node.js](https://nodejs.org/en/download) (latest LTS version 22.14.0)
+1. [git](https://git-scm.com/) (version 2.49.0) ![git](https://github.com/user-attachments/assets/88f3333c-fdcf-4127-8f86-f8a70890d9a1)
+
+2. [Node.js](https://nodejs.org/en/download) (latest LTS version 22.14.0) ![NodeJS](https://github.com/user-attachments/assets/d7c0e425-715e-48e0-a1af-20d8d4e2266e)
+
 3. [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)  (version 8.0.42)
 
 ## Helpful Resources
@@ -11,11 +13,15 @@
 3. [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) this is helpful to learn how to use the `display: flex;` css property to align your UI design. For other guides you can look [here](https://css-tricks.com/guides/).
 
 ## Setup local database
-1. Open MySQL Workbench and create a new MySQL Connection - name it whatever you want.
-2. Open the Connection and Create A New Schema.
+1. Open MySQL Workbench and create a new MySQL Connection - name it whatever you want. ![MySQLConnection](https://github.com/user-attachments/assets/fac29774-1449-4f06-9501-06f387031743)
+
+2. Open the Connection and Create A New Schema. ![NewSchema](https://github.com/user-attachments/assets/0d6285fd-0d6d-4943-8f99-8a6c9e04fac0)
+
 3. Create two new tables
-   1. games
-   2. players
+   1. games ![GamesTable](https://github.com/user-attachments/assets/86719794-fae9-4ff2-ae97-2e40bbab1b16)
+
+   2. players ![PlayersTable](https://github.com/user-attachments/assets/676ef68d-2b39-4c17-a00b-06004eefb79e)
+
 
 ## Setup project locally
 1. Clone this repository. [Github Desktop](https://desktop.github.com/download/) is a useful application to manage a git repository as it provides a graphical interface.
